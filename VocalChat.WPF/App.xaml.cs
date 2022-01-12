@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using VocalChat.WPF.ViewModels;
 using VocalChat.WPF.Views;
 
 namespace VocalChat.WPF
@@ -27,6 +28,8 @@ namespace VocalChat.WPF
         private void ConfigureServices(ServiceCollection services)
         {
             services.AddSingleton<HomeView>();
+
+            services.AddScoped<HomeViewModel>();
         }
 
         private void OnStartup(object sender, StartupEventArgs e)
@@ -34,6 +37,7 @@ namespace VocalChat.WPF
             base.OnStartup(e);
             HomeView? homeView = _serviceProvider.GetService<HomeView>();
             if (homeView is null) throw new Exception("Application cannot start!");
+            homeView.DataContext = _serviceProvider.GetService<HomeViewModel>();
             homeView.Show();
         }
     }

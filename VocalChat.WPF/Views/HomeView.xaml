@@ -4,9 +4,42 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VocalChat.WPF.Views"
+        xmlns:vm="clr-namespace:VocalChat.WPF.ViewModels"
         mc:Ignorable="d"
         Title="HomeView" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <DockPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" LastChildFill="False">
+            <TextBlock Text="Username :" />
+            <TextBox Text="{Binding Username}" Width="200" />
+            <Button Content="Connect" Width="100" />
+        </DockPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <TextBlock Text="Connected users" />
+            <ListBox ItemsSource="{Binding ConnectedUsers}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="Output" />
+            <ComboBox ItemsSource="{Binding AvailableOutputs}" SelectedItem="{Binding SelectedOutput}" />
+            <TextBlock Text="Inputs" />
+            <ComboBox ItemsSource="{Binding AvailableInputs}" Selected="{Binding SelectedInput}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <Button Content="Start" />
+            <Button Content="Stop" />
+        </StackPanel>
     </Grid>
 </Window>
