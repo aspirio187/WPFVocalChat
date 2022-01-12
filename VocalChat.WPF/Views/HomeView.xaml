@@ -22,7 +22,9 @@
         <DockPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" LastChildFill="False">
             <TextBlock Text="Username :" />
             <TextBox Text="{Binding Username}" Width="200" />
-            <Button Content="Connect" Width="100" />
+            <Button Content="Connect" Width="100" Command="{Binding ConnectCommand}"/>
+            <TextBlock Text="Context ID:" />
+            <TextBlock Text="{Binding ContextId}" />
         </DockPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="0">
