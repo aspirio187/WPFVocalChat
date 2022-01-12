@@ -34,7 +34,7 @@
             <TextBlock Text="Output" />
             <ComboBox ItemsSource="{Binding AvailableOutputs}" SelectedItem="{Binding SelectedOutput}" />
             <TextBlock Text="Inputs" />
-            <ComboBox ItemsSource="{Binding AvailableInputs}" Selected="{Binding SelectedInput}" />
+            <ComboBox ItemsSource="{Binding AvailableInputs}" SelectedItem="{Binding SelectedInput}" />
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="2">
