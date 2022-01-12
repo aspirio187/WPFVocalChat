@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocalChat.API", "VocalChat.API\VocalChat.API.csproj", "{C639CD51-B463-4C90-8751-A13C7D9A30EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocalChat.WPF", "VocalChat.WPF\VocalChat.WPF.csproj", "{731084AC-255C-4E26-B41E-D1A18CB4DC0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocalChat.Shared", "VocalChat.Shared\VocalChat.Shared.csproj", "{F2494D5A-4DD8-49CA-B7EF-943E04A4D940}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C639CD51-B463-4C90-8751-A13C7D9A30EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C639CD51-B463-4C90-8751-A13C7D9A30EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C639CD51-B463-4C90-8751-A13C7D9A30EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C639CD51-B463-4C90-8751-A13C7D9A30EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{731084AC-255C-4E26-B41E-D1A18CB4DC0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{731084AC-255C-4E26-B41E-D1A18CB4DC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{731084AC-255C-4E26-B41E-D1A18CB4DC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{731084AC-255C-4E26-B41E-D1A18CB4DC0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2494D5A-4DD8-49CA-B7EF-943E04A4D940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2494D5A-4DD8-49CA-B7EF-943E04A4D940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2494D5A-4DD8-49CA-B7EF-943E04A4D940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2494D5A-4DD8-49CA-B7EF-943E04A4D940}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
