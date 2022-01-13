@@ -29,10 +29,6 @@ namespace VocalChat.WPF
 
         private void ConfigureServices(ServiceCollection services)
         {
-            //HubConnection connection = new HubConnectionBuilder()
-            //    .WithUrl("https://localhost:7048/chathub")
-            //    .Build();
-
             services.AddScoped(provider =>
             {
                 return new HubConnectionBuilder()

@@ -13,7 +13,6 @@ namespace VocalChat.WPF.Services
     public class SignalRChatService
     {
         private readonly HubConnection _connection;
-        private readonly Task _initialized;
 
         public event Action<UserHubModel>? NewUserArrived;
         public event Action<string> Connected;
